@@ -81,11 +81,11 @@ gulp.task( 'default', ['watch'] );
 
 
 // очистка папки dist перед записью файлов
-gulp.task( 'clean', function() {
+// gulp.task( 'clean', function() {
 
-    return del.sync( 'dist' );
+//     return del.sync( 'dist' );
 
-} );
+// } );
 
 
 // оптимизация изображений
@@ -103,7 +103,7 @@ gulp.task( 'img', function() {
 
 
 // сбор файлов в продакшен
-gulp.task( 'build', ['clean', 'img', 'sass', 'scripts'], function() {
+gulp.task( 'build', ['img', 'sass', 'scripts'], function() {
 
     var buildCss = gulp.src( ['app/css/main.css', 'app/css/libs.min.css'] )
         .pipe( gulp.dest( 'dist/css' ) )
