@@ -1,0 +1,43 @@
+.mobile-menu
+	display: none
+	z-index: 100
+	position: absolute
+	// top: 128px
+	width: 100%
+	height: 100vh
+	background: rgba(#000, 1)
+
+	&__list
+		margin: auto
+			top: 250px
+		width: 50%
+
+	&__item
+		margin-bottom: 30px
+		text-align: center
+		a
+			font-family: 'PT Sans Caption', sans-serif
+			font-size: 1.5rem
+			text-transform: uppercase
+			color: #fff
+			text-align: center
+			font-weight: bold
+
+	&__trigger
+		display: block
+		width: 37px
+		height: 29px
+		margin-left: auto
+		background: url('../img/menu-trigger-icon.svg') no-repeat 0 0
+		opacity: .8
+		&:focus
+			background-position: 0px 10px
+		@media #{$desktop}
+			display: none
+		@media #{$desktop-hd}
+			display: none
+
+#menuTrigger
+	display: none
+#menuTrigger:checked ~ .mobile-menu
+	display: block

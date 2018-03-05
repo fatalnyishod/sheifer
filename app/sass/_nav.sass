@@ -1,0 +1,20 @@
+.nav
+	display: flex
+	justify-content: space-between
+	width: 50%
+	@media #{$tablet}
+		display: none
+	@media #{$phone}
+		display: none
+
+	&__item
+		font-family: 'PT Sans Caption', sans-serif
+		font-weight: bold
+		text-transform: uppercase
+		a
+			color: #fff
+			transition: color .2s ease, border .2s ease
+			&:hover
+				color: $sec-color
+				padding-bottom: 3px
+				border-bottom: 2px solid $sec-color

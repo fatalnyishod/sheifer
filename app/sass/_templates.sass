@@ -1,0 +1,40 @@
+// fonts
+@font-face
+	font-family: 'PT Serif Caption'
+	src: url('../fonts/pt-serif-caption-regular.woff') format('woff')
+	font-weight: 300
+	font-style: regular
+
+@font-face
+	font-family: 'PT Serif Caption'
+	src: url('../fonts/pt-serif-caption-italic.woff') format('woff')
+	font-weight: 300
+	font-style: italic
+
+@font-face
+	font-family: 'PT Sans Caption'
+	src: url('../fonts/pt_sans-caption-regular.woff') format('woff')
+	font-weight: 300
+	font-style: regular
+
+
+// mixins
+@mixin flex-stretch
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+
+
+// sizes
+$desktop-hd: '(min-width: 1280px)' // @media #{$desktop-hd}
+$desktop: '(min-width: 930px) and (max-width: 1279px)' // @media #{$desktop}
+$tablet: '(min-width: 620px) and (max-width: 929px)' // @media #{$tablet}
+$phone: '(max-width: 619px)' // @media #{$phone}
+
+
+// colors
+$bg-color: #EEEEF6
+$font-color: #4A4A4A
+$sec-color: #E6CB69
+$hover-link-color: #1DA1F2
