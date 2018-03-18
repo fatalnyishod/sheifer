@@ -26,9 +26,13 @@
 			margin-top: 10px
 			margin-bottom: 30px
 		p
-			width: 80%
+			width: 50%
 			color: #fff
 			font-size: 1.15rem
+			@media #{$desktop}
+				width: 70%
+			@media #{$tablet}
+				width: 100%
 			@media #{$phone}
 				width: 100%
 
@@ -42,7 +46,7 @@
 				padding-top: 220px
 				transform: skewY(4deg)
 				@media #{$phone}
-					padding-top: 180px
+					padding-top: 170px
 
 		&_2
 			height: 600px
@@ -52,14 +56,20 @@
 			outline: 3px solid #fff
 			.grid
 				text-align: right
-				padding-top: 150px
+				padding-top: 100px
 				transform: skewY(4deg)
+				@media #{$desktop}
+					padding-top: 80px
 				@media #{$phone}
-					padding-top: 40px
+					padding-top: 50px
 			.line
 				margin-left: auto
 			p
-				margin-left: 20%
+				margin-left: 50%
+				@media #{$desktop}
+					margin-left: 30%
+				@media #{$tablet}
+					margin: 0
 				@media #{$phone}
 					margin: 0
 		&_3
@@ -92,13 +102,17 @@
 			transform: skewY(-4deg)
 			outline: 3px solid #fff
 			.grid
-				padding-top: 120px
+				padding-top: 90px
 				transform: skewY(4deg)
 				text-align: right
 			.line
 				margin-left: auto
 			p
-				margin-left: 20%
+				margin-left: 50%
+				@media #{$desktop}
+					margin-left: 30%
+				@media #{$tablet}
+					margin: 0
 				@media #{$phone}
 					margin: 0
 

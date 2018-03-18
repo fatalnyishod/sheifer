@@ -1,1 +1,23 @@
-<svg width="117" height="142" xmlns="http://www.w3.org/2000/svg"><defs><filter x="-57.7%" y="-32%" width="215.5%" height="184.5%" filterUnits="objectBoundingBox" id="a"><feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/><feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g filter="url(#a)" transform="translate(23 13)" fill="none" fill-rule="evenodd"><path d="M35.5 0C15.924 0 0 16.77 0 38.907c0 13.205 7.47 26.505 18.826 41.038C26.825 88.922 33.412 96.216 35.5 97c2.085-.784 8.674-8.078 15.598-17.055C63.53 65.412 71 52.112 71 38.907 71 16.77 55.074 0 35.5 0z" fill="#313131" fill-rule="nonzero"/><path d="M41.666 22.003h.015v3.25h-.015v30.404h-2.709V25.254h-5.96v30.403H30.29V25.254h-1.1l-2.168-3.25h3.266l2.71-.004 5.959.003L41.666 22zM28.663 56.746h5.96V26.343h2.709v30.403h5.96V26.343H46V60h-2.709l-5.96-.003-2.708.003-5.96-.003-2.708.003-.02-.003v-3.25h.02V26.342h2.708v30.403z" fill="#FFF"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="117px" height="142px" viewBox="0 0 117 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-57.7%" y="-32.0%" width="215.5%" height="184.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6" filter="url(#filter-1)" transform="translate(23.000000, 13.000000)">
+            <path d="M35.5,0 C15.9243057,0 0,16.7698944 0,38.9065934 C0,52.1119944 7.46994512,65.4118723 18.8257576,79.9450549 C26.8247867,88.9223394 33.412189,96.2163475 35.5,97 C37.5852651,96.2163475 44.1739404,88.9223394 51.0984848,79.9450549 C63.5296306,65.4118723 71,52.1119944 71,38.9065934 C70.9995757,16.7698944 55.0735727,0 35.5,0 Z" id="Combined-Shape" fill="#313131" fill-rule="nonzero"></path>
+            <path d="M41.6658477,22.0032643 L41.680537,22.0032643 L41.680537,25.2538786 L41.6658477,25.2538786 L41.6658477,55.6571429 L38.9570025,55.6571429 L38.9570025,25.2538786 L32.997543,25.2538786 L32.997543,55.6571429 L30.2886978,55.6571429 L30.2886978,25.2538786 L29.191388,25.2538786 L27.0233942,22.0032643 L30.2886978,22.0032643 L32.997543,22 L38.9570025,22.0032643 L41.6658477,22 Z M28.6633907,56.7461214 L34.6228501,56.7461214 L34.6228501,26.3428571 L37.3316953,26.3428571 L37.3316953,56.7461214 L43.2911548,56.7461214 L43.2911548,26.3428571 L46,26.3428571 L46,60 L43.2911548,60 L37.3316953,59.9967357 L34.6228501,60 L28.6633907,59.9967357 L25.9545455,60 L25.9349596,59.9967357 L25.9349596,56.7461214 L25.9545455,56.7461214 L25.9545455,26.3428571 L28.6633907,26.3428571 L28.6633907,56.7461214 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

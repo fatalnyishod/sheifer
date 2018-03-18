@@ -1,10 +1,12 @@
 .header
 	width: 100%
 	height: 100vh
-	min-height: 600px
+	min-height: 800px
 	background: url('../img/header-bg.png') no-repeat center
 	background-color: #04162B
 	background-size: cover
+	@media #{$phone}
+		min-height: 1100px
 
 
 	&__top
@@ -29,6 +31,8 @@
 		align-items: center
 		margin: auto
 			top: 25vh
+		@media #{$tablet}
+			margin-top: 100px
 		@media #{$phone}
 			margin-top: 70px
 
@@ -40,13 +44,13 @@
 		text-align: center
 	
 	&__text
-		width: 700px
+		width: 800px
 		margin-bottom: 60px
 		text-align: center
 		color: #BFCDDF
 		font-family: 'PT Sans Caption'
 		line-height: 1.6
-		font-size: 1rem
+		font-size: 1.1rem
 		@media #{$tablet}
 			width: 100%
 		@media #{$phone}

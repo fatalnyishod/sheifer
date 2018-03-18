@@ -80,10 +80,16 @@ h2, h1, a, p {
 .header {
   width: 100%;
   height: 100vh;
-  min-height: 600px;
+  min-height: 800px;
   background: url("../img/header-bg.png") no-repeat center;
   background-color: #04162B;
   background-size: cover;
+}
+
+@media (max-width: 619px) {
+  .header {
+    min-height: 1100px;
+  }
 }
 
 .header__top {
@@ -124,6 +130,12 @@ h2, h1, a, p {
   margin-top: 25vh;
 }
 
+@media (min-width: 620px) and (max-width: 929px) {
+  .header__content {
+    margin-top: 100px;
+  }
+}
+
 @media (max-width: 619px) {
   .header__content {
     margin-top: 70px;
@@ -140,13 +152,13 @@ h2, h1, a, p {
 }
 
 .header__text {
-  width: 700px;
+  width: 800px;
   margin-bottom: 60px;
   text-align: center;
   color: #BFCDDF;
   font-family: 'PT Sans Caption';
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 620px) and (max-width: 929px) {
@@ -267,8 +279,20 @@ h2, h1, a, p {
           align-items: center;
   width: 100%;
   height: 100vh;
-  min-height: 860px;
+  min-height: 970px;
   background: url("../img/texture.png") repeat;
+}
+
+@media (min-width: 620px) and (max-width: 929px) {
+  .team {
+    min-height: 1000px;
+  }
+}
+
+@media (max-width: 619px) {
+  .team {
+    min-height: 1100px;
+  }
 }
 
 .team__grid {
@@ -292,7 +316,7 @@ h2, h1, a, p {
 }
 
 .team__text {
-  width: 650px;
+  width: 710px;
   margin: auto;
   text-align: center;
 }
@@ -325,7 +349,65 @@ h2, h1, a, p {
   width: 260px;
   height: 400px;
   margin: auto;
-  background: url("../img/carousel__item.png") no-repeat center;
+}
+
+.carousel__item_1 {
+  background: url("../img/team/sheifer.png") no-repeat center;
+  background-size: contain;
+}
+
+.carousel__item_2 {
+  background: url("../img/team/shteinbok.png") no-repeat center;
+  background-size: contain;
+}
+
+.carousel__item_3 {
+  background: url("../img/team/imereli.png") no-repeat center;
+  background-size: contain;
+}
+
+.carousel__item_4 {
+  background: url("../img/team/timofeev.png") no-repeat center;
+  background-size: contain;
+}
+
+.carousel__item_5 {
+  background: url("../img/team/eremina.png") no-repeat center;
+  background-size: contain;
+}
+
+.carousel__item_6 {
+  background: url("../img/team/kochergina.png") no-repeat center;
+  background-size: contain;
+}
+
+.carousel__item_7 {
+  background: url("../img/team/muhametkaliev.png") no-repeat center;
+  background-size: contain;
+}
+
+.carousel__item_8 {
+  background: url("../img/team/storozhenko.png") no-repeat center;
+  background-size: contain;
+}
+
+.carousel__item_9 {
+  background: url("../img/team/cherepanov.png") no-repeat center;
+  background-size: contain;
+}
+
+.carousel__item_10 {
+  background: url("../img/team/zarzhetsky.png") no-repeat center;
+  background-size: contain;
+}
+
+.carousel__item_11 {
+  background: url("../img/team/bogus.png") no-repeat center;
+  background-size: contain;
+}
+
+.carousel__item_12 {
+  background: url("../img/team/tolmacheva.png") no-repeat center;
   background-size: contain;
 }
 
@@ -343,24 +425,36 @@ h2, h1, a, p {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 90px;
+  height: 70px;
   background: rgba(59, 61, 63, 0.9);
   color: #fff;
   text-transform: uppercase;
   font-family: 'PT Sans Caption', sans-serif;
   font-size: .9rem;
   text-align: center;
-  -webkit-transition: background .2s ease;
-  transition: background .2s ease;
+  -webkit-transition: background .2s ease, height .2s ease;
+  transition: background .2s ease, height .2s ease;
 }
 
 .carousel__item-name:hover {
   background: #3B3D3F;
 }
 
+.carousel__item-name_big:hover {
+  height: 150px;
+}
+
 .carousel__item-name span {
   text-transform: none;
   color: #E6CB69;
+}
+
+.big-text {
+  display: none;
+}
+
+.carousel__item-name_big:hover > .big-text {
+  display: block;
 }
 
 .owl-nav {
@@ -446,9 +540,21 @@ h2, h1, a, p {
 }
 
 .practic__item p {
-  width: 80%;
+  width: 50%;
   color: #fff;
   font-size: 1.15rem;
+}
+
+@media (min-width: 930px) and (max-width: 1279px) {
+  .practic__item p {
+    width: 70%;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 929px) {
+  .practic__item p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 619px) {
@@ -474,7 +580,7 @@ h2, h1, a, p {
 
 @media (max-width: 619px) {
   .practic__item_1 .grid {
-    padding-top: 180px;
+    padding-top: 170px;
   }
 }
 
@@ -489,14 +595,20 @@ h2, h1, a, p {
 
 .practic__item_2 .grid {
   text-align: right;
-  padding-top: 150px;
+  padding-top: 100px;
   -webkit-transform: skewY(4deg);
           transform: skewY(4deg);
 }
 
+@media (min-width: 930px) and (max-width: 1279px) {
+  .practic__item_2 .grid {
+    padding-top: 80px;
+  }
+}
+
 @media (max-width: 619px) {
   .practic__item_2 .grid {
-    padding-top: 40px;
+    padding-top: 50px;
   }
 }
 
@@ -505,7 +617,19 @@ h2, h1, a, p {
 }
 
 .practic__item_2 p {
-  margin-left: 20%;
+  margin-left: 50%;
+}
+
+@media (min-width: 930px) and (max-width: 1279px) {
+  .practic__item_2 p {
+    margin-left: 30%;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 929px) {
+  .practic__item_2 p {
+    margin: 0;
+  }
 }
 
 @media (max-width: 619px) {
@@ -557,7 +681,7 @@ h2, h1, a, p {
 }
 
 .practic__item_5 .grid {
-  padding-top: 120px;
+  padding-top: 90px;
   -webkit-transform: skewY(4deg);
           transform: skewY(4deg);
   text-align: right;
@@ -568,7 +692,19 @@ h2, h1, a, p {
 }
 
 .practic__item_5 p {
-  margin-left: 20%;
+  margin-left: 50%;
+}
+
+@media (min-width: 930px) and (max-width: 1279px) {
+  .practic__item_5 p {
+    margin-left: 30%;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 929px) {
+  .practic__item_5 p {
+    margin: 0;
+  }
 }
 
 @media (max-width: 619px) {

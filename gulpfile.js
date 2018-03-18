@@ -12,7 +12,7 @@ var gulp         = require( 'gulp' ),
     autoprefixer = require( 'gulp-autoprefixer' );
 
 
-// преобразование sass в css<
+// преобразование sass в css
 gulp.task( 'sass', function() {
 
     return gulp.src( 'app/sass/**/*.sass' )
