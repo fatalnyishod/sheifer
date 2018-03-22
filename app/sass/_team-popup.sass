@@ -1,0 +1,63 @@
+.team-popup
+	position: absolute
+	display: none
+	z-index: 50
+	align-self: center
+	justify-content: center
+	width: 100%
+	height: 100%
+	background: rgba(#000, .8)
+
+	&__item
+		// display: none
+		position: relative
+		display: flex
+		justify-content: space-between
+		width: 1500px
+		height: 800px
+		margin: 5% auto 0 auto
+		background: #fff
+		// box-shadow: 0 0 20px 4px rgba(#000, .1)
+
+	&__content
+		width: 60%
+		height: 100%
+		padding: 70px 130px 50px 130px
+		background: $sec-color
+
+		.line
+			margin: 30px 0 100px 0px
+			background: #fff
+
+	&__text
+		height: 65%
+		overflow-y: scroll
+	
+	&__close
+		position: absolute
+		display: block
+		top: 0
+		right: 0
+		width: 70px
+		height: 70px
+		background: url('../img/close-icon.svg') no-repeat top
+		background-size: contain
+
+	&__img
+		width: 40%
+		height: 90%
+		margin-top: auto
+		&_1
+			background: url('../img/team/eremina.png') no-repeat center
+			background-size: contain
+
+// magic
+// #teamPopupClose:checked ~ .team-popup
+// 	display: none 
+// #teamPopupClose:checked ~ .team-popup__item
+// 	display: none
+
+// #teamPopup1:checked ~ .team-popup__item_1
+// 	display: block
+// #teamPopup2:checked ~ .team-popup__item_2
+// 	display: block

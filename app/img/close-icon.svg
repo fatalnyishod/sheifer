@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="popup" transform="translate(-1472.000000, 0.000000)">
+            <g id="Group-10" transform="translate(1472.000000, 0.000000)">
+                <polygon id="Rectangle-14" fill="#FFFFFF" points="0 0 90 0 90 90"></polygon>
+                <g id="x" transform="translate(52.000000, 16.000000)" fill="#4A4A4A">
+                    <rect id="Rectangle-15" transform="translate(12.500000, 12.179487) rotate(-45.000000) translate(-12.500000, -12.179487) " x="11.5384615" y="-3.84615385" width="1.92307692" height="32.0512821"></rect>
+                    <rect id="Rectangle-15-Copy" transform="translate(12.500000, 12.179487) rotate(45.000000) translate(-12.500000, -12.179487) " x="11.5384615" y="-3.84615385" width="1.92307692" height="32.0512821"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

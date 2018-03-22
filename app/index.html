@@ -32,6 +32,20 @@
 <body>
     <input type="checkbox" id="menuTrigger">
 
+<!--     <input type="radio" id="teamPopupClose" name="teamPopup" checked>
+    <input type="radio" id="teamPopup1" name="teamPopup">
+    <input type="radio" id="teamPopup2" name="teamPopup">
+    <input type="radio" id="teamPopup3" name="teamPopup">
+    <input type="radio" id="teamPopup4" name="teamPopup">
+    <input type="radio" id="teamPopup5" name="teamPopup">
+    <input type="radio" id="teamPopup6" name="teamPopup">
+    <input type="radio" id="teamPopup7" name="teamPopup">
+    <input type="radio" id="teamPopup8" name="teamPopup">
+    <input type="radio" id="teamPopup9" name="teamPopup">
+    <input type="radio" id="teamPopup10" name="teamPopup">
+    <input type="radio" id="teamPopup11" name="teamPopup">
+    <input type="radio" id="teamPopup12" name="teamPopup"> -->
+
     <div class="mobile-menu wow bounceInDown">
         <label for="menuTrigger" class="mobile-menu__close"></label>
         <ul class="mobile-menu__list">
@@ -51,7 +65,7 @@
             </li>
         </ul>
     </div>
-    
+
     <header class="header">
         <div class="grid header__grid">
             <div class="header__top">
@@ -95,6 +109,31 @@
     </header>
 
     <section class="team" id="team">
+        <div class="team-popup">
+            <div class="team-popup__item team-popup__item_1">
+                <div class="team-popup__img team-popup__img_1"></div>
+
+                <div class="team-popup__content">
+                    <h3 class="title">
+                        Константин <br>
+                        Константинопольский
+                    </h3>
+
+                    <div class="line"></div>
+
+                    <p class="team-popup__text">
+                        Общий стаж юридической практики 17 лет. Адвокатский стаж - 7 лет. Ранее работал в органах внутренних дел, прокуратуры в должности следователя по особо важным делам, после создания следственного комитета России - возглявлял следственный отдел СК РФ. 
+                        <br><br>
+                        Успешно осуществля защиту по сложным уголовным делам экономической направленности, принимал участие в резонансных судебных процессах. Зарекомендовал себя как хороший специалист в проектах, сочетающих в себе гражданско-правовую и уголовную (силовую) составляющую. Практикует также в сфере банротства.
+                        <br><br>
+                        Морально устойчив. В порочащих связях не замечен (а если замечен - то каждая связь согласована и утверждена управляющим партнёром). В коллективе пользуется уважением. Беспощаден к врагам рейха. Женат.
+                    </p>
+                
+                    <a class="team-popup__close" href="#"></a>
+                </div>
+            </div>
+        </div>
+
         <div class="grid team__grid">
             <h2 class="title wow bounceInDown">
                 Команда
@@ -107,7 +146,7 @@
             </p>
 
             <div class="carousel owl-carousel">
-                <div class="carousel__item carousel__item_1">
+                <a class="carousel__item carousel__item_1" href="#">
                     <div class="carousel__item-name carousel__item-name_big">
                         Лариса Шейфер
                         <span>управляющий партнёр</span>
@@ -116,7 +155,7 @@
                             адвокат, соучредитель бюро
                         </span>
                     </div>
-                </div>
+                </a>
                 
                 <div class="carousel__item carousel__item_2">
                     <div class="carousel__item-name carousel__item-name_big">
@@ -405,7 +444,7 @@
         <script src="js/main.js"></script>
     
     <!-- preloader -->
-        <style type="text/css">
+        <!-- <style type="text/css">
             #hellopreloader_preload{
                 display: block;
                 position: fixed;
@@ -439,7 +478,7 @@
             window.onload = function(){
                 setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);
             };
-        </script>
-    
+        </script> -->
+
 </body>
 </html>

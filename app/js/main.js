@@ -59,3 +59,44 @@ ymaps.ready(init);
 
 // animates
 new WOW().init();
+
+// teamPopups
+$('.carousel__item').click(function(){
+    $('.team-popup').show();
+})
+
+$('body').on('click', '.carousel__item__close', function(){
+    hide
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
