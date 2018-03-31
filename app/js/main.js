@@ -65,9 +65,9 @@ $('.carousel__item').click(function(){
     $('.team-popup').show();
 })
 
-$('body').on('click', '.carousel__item__close', function(){
-    hide
-})
+// $('body').on('click', '.carousel__item__close', function(){
+//     hide
+// })
 
 
 
