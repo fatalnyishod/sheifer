@@ -1,4 +1,4 @@
-// плавные переход
+// плавные переходы
 $(function(){
     $('a[href^="#"]').click(function(){
         var target = $(this).attr('href');
@@ -61,13 +61,16 @@ ymaps.ready(init);
 new WOW().init();
 
 // teamPopups
-$('.carousel__item').click(function(){
-    $('.team-popup').show();
-})
+// function darkBody() {
+//     if($('.team-popup__checkbox').prop('checked')) {
+//         $('#darkBody').css('display', 'block');
+//     } else {
+//         $('#darkBody').css('display', 'none');
+//     }
+// }
 
-// $('body').on('click', '.carousel__item__close', function(){
-//     hide
-// })
+// darkBody();
+
 
 
 

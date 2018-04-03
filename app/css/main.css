@@ -35,6 +35,15 @@ input[type='checkbox'] {
   visibility: hidden;
 }
 
+#darkBody {
+  display: none;
+  z-index: 40;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+}
+
 @font-face {
   font-family: 'PT Serif Caption';
   src: url("../fonts/pt-serif-caption-regular.woff") format("woff");
@@ -295,7 +304,7 @@ input[type='checkbox'] {
 
 @media (max-width: 619px) {
   .team {
-    min-height: 1100px;
+    min-height: 1170px;
   }
 }
 
@@ -320,7 +329,7 @@ input[type='checkbox'] {
 }
 
 .team__text {
-  width: 710px;
+  width: 90%;
   margin: auto;
   text-align: center;
 }
@@ -337,50 +346,32 @@ input[type='checkbox'] {
   }
 }
 
-.team-popup {
-  position: absolute;
+.team-popup__item {
   display: none;
+  position: absolute;
   z-index: 50;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%;
-  min-height: 970px;
-  background: rgba(0, 0, 0, 0.8);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  height: 90%;
+  min-height: 920px;
+  margin: 25px auto 0 auto;
+  background: #fff;
+  -webkit-box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 620px) and (max-width: 929px) {
-  .team-popup {
-    min-height: 1000px;
+  .team-popup__item {
+    min-height: 950px;
   }
 }
 
 @media (max-width: 619px) {
-  .team-popup {
-    min-height: 1100px;
-  }
-}
-
-.team-popup__item {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 1500px;
-  height: 800px;
-  margin: 5% auto 0 auto;
-  background: #fff;
-}
-
-@media (min-width: 930px) and (max-width: 1279px) {
   .team-popup__item {
-    width: 900px;
+    margin-top: 10px;
+    min-height: 1150px;
   }
 }
 
@@ -391,14 +382,66 @@ input[type='checkbox'] {
   background: #E6CB69;
 }
 
+@media (min-width: 930px) and (max-width: 1279px) {
+  .team-popup__content {
+    padding: 70px 70px 30px 70px;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 929px) {
+  .team-popup__content {
+    padding: 70px 70px 30px 70px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 619px) {
+  .team-popup__content {
+    width: 100%;
+    padding: 30px 15px 30px 15px;
+  }
+}
+
+@media (max-width: 619px) {
+  .team-popup__content .title {
+    font-size: 22px;
+  }
+}
+
 .team-popup__content .line {
   margin: 30px 0 100px 0px;
   background: #fff;
 }
 
+@media (max-width: 619px) {
+  .team-popup__content .line {
+    margin-bottom: 40px;
+  }
+}
+
 .team-popup__text {
   height: 65%;
+  font-size: 1.3rem;
   overflow-y: scroll;
+}
+
+@media (min-width: 930px) and (max-width: 1279px) {
+  .team-popup__text {
+    height: 100%;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 929px) {
+  .team-popup__text {
+    height: 100%;
+  }
+}
+
+@media (max-width: 619px) {
+  .team-popup__text {
+    height: 80%;
+    font-size: 1rem;
+  }
 }
 
 .team-popup__close {
@@ -412,15 +455,159 @@ input[type='checkbox'] {
   background-size: contain;
 }
 
+.team-popup__close:hover {
+  cursor: pointer;
+}
+
 .team-popup__img {
   width: 40%;
   height: 90%;
   margin-top: auto;
 }
 
+@media (min-width: 620px) and (max-width: 929px) {
+  .team-popup__img {
+    display: none;
+  }
+}
+
+@media (max-width: 619px) {
+  .team-popup__img {
+    display: none;
+  }
+}
+
 .team-popup__img_1 {
+  background: url("../img/team/sheifer.png") no-repeat bottom;
+  background-size: contain;
+}
+
+.team-popup__img_2 {
+  background: url("../img/team/shteinbok.png") no-repeat bottom;
+  background-size: contain;
+}
+
+.team-popup__img_3 {
+  background: url("../img/team/imereli.png") no-repeat bottom;
+  background-size: contain;
+}
+
+.team-popup__img_4 {
+  background: url("../img/team/timofeev.png") no-repeat bottom;
+  background-size: contain;
+}
+
+.team-popup__img_5 {
   background: url("../img/team/eremina.png") no-repeat bottom;
   background-size: contain;
+}
+
+.team-popup__img_6 {
+  background: url("../img/team/kochergina.png") no-repeat bottom;
+  background-size: contain;
+}
+
+.team-popup__img_7 {
+  background: url("../img/team/muhametkaliev.png") no-repeat bottom;
+  background-size: contain;
+}
+
+.team-popup__img_8 {
+  background: url("../img/team/storozhenko.png") no-repeat bottom;
+  background-size: contain;
+}
+
+.team-popup__img_9 {
+  background: url("../img/team/cherepanov.png") no-repeat bottom;
+  background-size: contain;
+}
+
+.team-popup__img_10 {
+  background: url("../img/team/zarzhetsky.png") no-repeat bottom;
+  background-size: contain;
+}
+
+.team-popup__img_11 {
+  background: url("../img/team/bogus.png") no-repeat bottom;
+  background-size: contain;
+}
+
+.team-popup__img_12 {
+  background: url("../img/team/tolmacheva.png") no-repeat bottom;
+  background-size: contain;
+}
+
+#teamPopup1:checked ~ .team-popup__item_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90%;
+}
+
+#teamPopup2:checked ~ .team-popup__item_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#teamPopup3:checked ~ .team-popup__item_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#teamPopup4:checked ~ .team-popup__item_4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#teamPopup5:checked ~ .team-popup__item_5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#teamPopup6:checked ~ .team-popup__item_6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#teamPopup7:checked ~ .team-popup__item_7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#teamPopup8:checked ~ .team-popup__item_8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#teamPopup9:checked ~ .team-popup__item_9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#teamPopup10:checked ~ .team-popup__item_10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#teamPopup11:checked ~ .team-popup__item_11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#teamPopup12:checked ~ .team-popup__item_12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .carousel {
@@ -520,7 +707,7 @@ input[type='checkbox'] {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 70px;
+  height: 100px;
   background: rgba(59, 61, 63, 0.9);
   color: #fff;
   text-transform: uppercase;
@@ -533,10 +720,6 @@ input[type='checkbox'] {
 
 .carousel__item-name:hover {
   background: #3B3D3F;
-}
-
-.carousel__item-name_big:hover {
-  height: 150px;
 }
 
 .carousel__item-name span {
@@ -834,6 +1017,12 @@ input[type='checkbox'] {
 @media (min-width: 620px) and (max-width: 929px) {
   .clients {
     min-height: 1480px;
+  }
+}
+
+@media (max-width: 619px) {
+  .clients {
+    min-height: 1000px;
   }
 }
 

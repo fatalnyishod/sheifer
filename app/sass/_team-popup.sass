@@ -1,46 +1,57 @@
 .team-popup
-	position: absolute
-	display: none
-	z-index: 50
-	align-self: center
-	justify-content: center
-	width: 100%
-	height: 100%
-	min-height: 970px
-	background: rgba(#000, .8)
-	@media #{$tablet}
-		min-height: 1000px
-	@media #{$phone}
-		min-height: 1100px
-
 	&__item
-		// display: none
-		position: relative
-		display: flex
+		display: none
+		position: absolute
+		z-index: 50
 		justify-content: space-between
-		width: 1500px
-		height: 800px
-		margin: 5% auto 0 auto
+		width: 95%
+		height: 90%
+		min-height: 920px
+		margin: 25px auto 0 auto
 		background: #fff
-		// box-shadow: 0 0 20px 4px rgba(#000, .1)
+		box-shadow: 0 0 20px 4px rgba(#000, .1)
 		@media #{$desktop}
-			width: 900px
 		@media #{$tablet}
+			min-height: 950px
+			// flex-direction: column
 		@media #{$phone}
+			margin-top: 10px
+			min-height: 1150px
 
 	&__content
 		width: 60%
 		height: 100%
 		padding: 70px 130px 50px 130px
 		background: $sec-color
+		@media #{$desktop}
+			padding: 70px 70px 30px 70px
+		@media #{$tablet}
+			padding: 70px 70px 30px 70px
+			width: 100%
+		@media #{$phone}
+			width: 100%
+			padding: 30px 15px 30px 15px
+		.title
+			@media #{$phone}
+				font-size: 22px
 
 		.line
 			margin: 30px 0 100px 0px
 			background: #fff
+			@media #{$phone}
+				margin-bottom: 40px
 
 	&__text
 		height: 65%
+		font-size: 1.3rem
 		overflow-y: scroll
+		@media #{$desktop}
+			height: 100%
+		@media #{$tablet}
+			height: 100%
+		@media #{$phone}
+			height: 80%
+			font-size: 1rem
 	
 	&__close
 		position: absolute
@@ -51,22 +62,77 @@
 		height: 70px
 		background: url('../img/close-icon.svg') no-repeat top
 		background-size: contain
+		&:hover
+			cursor: pointer
 
 	&__img
 		width: 40%
 		height: 90%
 		margin-top: auto
+		@media #{$tablet}
+			display: none
+		@media #{$phone}
+			display: none
 		&_1
+			background: url('../img/team/sheifer.png') no-repeat bottom
+			background-size: contain
+		&_2
+			background: url('../img/team/shteinbok.png') no-repeat bottom
+			background-size: contain
+		&_3
+			background: url('../img/team/imereli.png') no-repeat bottom
+			background-size: contain
+		&_4
+			background: url('../img/team/timofeev.png') no-repeat bottom
+			background-size: contain
+		&_5
 			background: url('../img/team/eremina.png') no-repeat bottom
+			background-size: contain
+		&_6
+			background: url('../img/team/kochergina.png') no-repeat bottom
+			background-size: contain
+		&_7
+			background: url('../img/team/muhametkaliev.png') no-repeat bottom
+			background-size: contain
+		&_8
+			background: url('../img/team/storozhenko.png') no-repeat bottom
+			background-size: contain
+		&_9
+			background: url('../img/team/cherepanov.png') no-repeat bottom
+			background-size: contain
+		&_10
+			background: url('../img/team/zarzhetsky.png') no-repeat bottom
+			background-size: contain
+		&_11
+			background: url('../img/team/bogus.png') no-repeat bottom
+			background-size: contain
+		&_12
+			background: url('../img/team/tolmacheva.png') no-repeat bottom
 			background-size: contain
 
 // magic
-// #teamPopupClose:checked ~ .team-popup
-// 	display: none 
-// #teamPopupClose:checked ~ .team-popup__item
-// 	display: none
-
-// #teamPopup1:checked ~ .team-popup__item_1
-// 	display: block
-// #teamPopup2:checked ~ .team-popup__item_2
-// 	display: block
+#teamPopup1:checked ~ .team-popup__item_1
+	display: flex
+	height: 90%
+#teamPopup2:checked ~ .team-popup__item_2
+	display: flex
+#teamPopup3:checked ~ .team-popup__item_3
+	display: flex
+#teamPopup4:checked ~ .team-popup__item_4
+	display: flex
+#teamPopup5:checked ~ .team-popup__item_5
+	display: flex
+#teamPopup6:checked ~ .team-popup__item_6
+	display: flex
+#teamPopup7:checked ~ .team-popup__item_7
+	display: flex
+#teamPopup8:checked ~ .team-popup__item_8
+	display: flex
+#teamPopup9:checked ~ .team-popup__item_9
+	display: flex
+#teamPopup10:checked ~ .team-popup__item_10
+	display: flex
+#teamPopup11:checked ~ .team-popup__item_11
+	display: flex
+#teamPopup12:checked ~ .team-popup__item_12
+	display: flex
