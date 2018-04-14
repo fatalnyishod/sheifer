@@ -1,50 +1,63 @@
 .team-popup
+	display: none !important
+	z-index: 100
+	position: absolute
+	width: 100%
+	height: 100%
+	min-height: 970px
+	display: flex
+	align-items: center
+	justify-content: center
+	background: rgba(#000, .6)
+	@media #{$tablet}
+		min-height: 1000px
+	@media #{$phone}
+		min-height: 1070px
+
 	&__item
-		display: none
-		position: absolute
-		z-index: 50
+		position: relative
+		display: flex
 		justify-content: space-between
-		width: 95%
-		height: 90%
-		min-height: 920px
+		width: 85%
+		// height: 20%
+		// min-height: 920px
 		margin: 25px auto 0 auto
 		background: #fff
 		box-shadow: 0 0 20px 4px rgba(#000, .1)
 		@media #{$desktop}
 		@media #{$tablet}
-			min-height: 950px
+			// min-height: 950px
 			// flex-direction: column
 		@media #{$phone}
 			margin-top: 10px
-			min-height: 1150px
+			// min-height: 1150px
 
 	&__content
 		width: 60%
-		height: 100%
 		padding: 70px 130px 50px 130px
 		background: $sec-color
 		@media #{$desktop}
 			padding: 70px 70px 30px 70px
 		@media #{$tablet}
-			padding: 70px 70px 30px 70px
+			padding: 70px
 			width: 100%
 		@media #{$phone}
 			width: 100%
-			padding: 30px 15px 30px 15px
+			padding: 30px 15px
 		.title
 			@media #{$phone}
-				font-size: 22px
+				font-size: 28px
 
 		.line
-			margin: 30px 0 100px 0px
+			margin: 30px 0 40px 0px
 			background: #fff
 			@media #{$phone}
 				margin-bottom: 40px
 
 	&__text
-		height: 65%
-		font-size: 1.3rem
-		overflow-y: scroll
+		// height: 65%
+		font-size: 1rem
+		// overflow-y: scroll
 		@media #{$desktop}
 			height: 100%
 		@media #{$tablet}
@@ -59,7 +72,7 @@
 		top: 0
 		right: 0
 		width: 70px
-		height: 70px
+		height: 70px		
 		background: url('../img/close-icon.svg') no-repeat top
 		background-size: contain
 		&:hover
@@ -67,7 +80,8 @@
 
 	&__img
 		width: 40%
-		height: 90%
+		// width: 300px
+		height: 500px		
 		margin-top: auto
 		@media #{$tablet}
 			display: none
@@ -104,6 +118,7 @@
 			background: url('../img/team/zarzhetsky.png') no-repeat bottom
 			background-size: contain
 		&_11
+			margin-top: 20px
 			background: url('../img/team/bogus.png') no-repeat bottom
 			background-size: contain
 		&_12
@@ -111,28 +126,27 @@
 			background-size: contain
 
 // magic
-#teamPopup1:checked ~ .team-popup__item_1
-	display: flex
-	height: 90%
-#teamPopup2:checked ~ .team-popup__item_2
-	display: flex
-#teamPopup3:checked ~ .team-popup__item_3
-	display: flex
-#teamPopup4:checked ~ .team-popup__item_4
-	display: flex
-#teamPopup5:checked ~ .team-popup__item_5
-	display: flex
-#teamPopup6:checked ~ .team-popup__item_6
-	display: flex
-#teamPopup7:checked ~ .team-popup__item_7
-	display: flex
-#teamPopup8:checked ~ .team-popup__item_8
-	display: flex
-#teamPopup9:checked ~ .team-popup__item_9
-	display: flex
-#teamPopup10:checked ~ .team-popup__item_10
-	display: flex
-#teamPopup11:checked ~ .team-popup__item_11
-	display: flex
-#teamPopup12:checked ~ .team-popup__item_12
-	display: flex
+#teamPopup1:checked ~ .team-popup_1
+	display: flex !important
+#teamPopup2:checked ~ .team-popup_2
+	display: flex !important
+#teamPopup3:checked ~ .team-popup_3
+	display: flex !important
+#teamPopup4:checked ~ .team-popup_4
+	display: flex !important
+#teamPopup5:checked ~ .team-popup_5
+	display: flex !important
+#teamPopup6:checked ~ .team-popup_6
+	display: flex !important
+#teamPopup7:checked ~ .team-popup_7
+	display: flex !important
+#teamPopup8:checked ~ .team-popup_8
+	display: flex !important
+#teamPopup9:checked ~ .team-popup_9
+	display: flex !important
+#teamPopup10:checked ~ .team-popup_10
+	display: flex !important
+#teamPopup11:checked ~ .team-popup_11
+	display: flex !important
+#teamPopup12:checked ~ .team-popup_12
+	display: flex !important

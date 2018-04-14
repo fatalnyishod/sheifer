@@ -304,7 +304,7 @@ input[type='checkbox'] {
 
 @media (max-width: 619px) {
   .team {
-    min-height: 1170px;
+    min-height: 1070px;
   }
 }
 
@@ -329,7 +329,7 @@ input[type='checkbox'] {
 }
 
 .team__text {
-  width: 90%;
+  width: 80%;
   margin: auto;
   text-align: center;
 }
@@ -346,38 +346,60 @@ input[type='checkbox'] {
   }
 }
 
-.team-popup__item {
-  display: none;
+.team-popup {
+  display: none !important;
+  z-index: 100;
   position: absolute;
-  z-index: 50;
+  width: 100%;
+  height: 100%;
+  min-height: 970px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 620px) and (max-width: 929px) {
+  .team-popup {
+    min-height: 1000px;
+  }
+}
+
+@media (max-width: 619px) {
+  .team-popup {
+    min-height: 1070px;
+  }
+}
+
+.team-popup__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 95%;
-  height: 90%;
-  min-height: 920px;
+  width: 85%;
   margin: 25px auto 0 auto;
   background: #fff;
   -webkit-box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 620px) and (max-width: 929px) {
-  .team-popup__item {
-    min-height: 950px;
-  }
-}
-
 @media (max-width: 619px) {
   .team-popup__item {
     margin-top: 10px;
-    min-height: 1150px;
   }
 }
 
 .team-popup__content {
   width: 60%;
-  height: 100%;
   padding: 70px 130px 50px 130px;
   background: #E6CB69;
 }
@@ -390,7 +412,7 @@ input[type='checkbox'] {
 
 @media (min-width: 620px) and (max-width: 929px) {
   .team-popup__content {
-    padding: 70px 70px 30px 70px;
+    padding: 70px;
     width: 100%;
   }
 }
@@ -398,18 +420,18 @@ input[type='checkbox'] {
 @media (max-width: 619px) {
   .team-popup__content {
     width: 100%;
-    padding: 30px 15px 30px 15px;
+    padding: 30px 15px;
   }
 }
 
 @media (max-width: 619px) {
   .team-popup__content .title {
-    font-size: 22px;
+    font-size: 28px;
   }
 }
 
 .team-popup__content .line {
-  margin: 30px 0 100px 0px;
+  margin: 30px 0 40px 0px;
   background: #fff;
 }
 
@@ -420,9 +442,7 @@ input[type='checkbox'] {
 }
 
 .team-popup__text {
-  height: 65%;
-  font-size: 1.3rem;
-  overflow-y: scroll;
+  font-size: 1rem;
 }
 
 @media (min-width: 930px) and (max-width: 1279px) {
@@ -461,7 +481,7 @@ input[type='checkbox'] {
 
 .team-popup__img {
   width: 40%;
-  height: 90%;
+  height: 500px;
   margin-top: auto;
 }
 
@@ -528,6 +548,7 @@ input[type='checkbox'] {
 }
 
 .team-popup__img_11 {
+  margin-top: 20px;
   background: url("../img/team/bogus.png") no-repeat bottom;
   background-size: contain;
 }
@@ -537,77 +558,76 @@ input[type='checkbox'] {
   background-size: contain;
 }
 
-#teamPopup1:checked ~ .team-popup__item_1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 90%;
+#teamPopup1:checked ~ .team-popup_1 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-#teamPopup2:checked ~ .team-popup__item_2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#teamPopup2:checked ~ .team-popup_2 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-#teamPopup3:checked ~ .team-popup__item_3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#teamPopup3:checked ~ .team-popup_3 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-#teamPopup4:checked ~ .team-popup__item_4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#teamPopup4:checked ~ .team-popup_4 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-#teamPopup5:checked ~ .team-popup__item_5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#teamPopup5:checked ~ .team-popup_5 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-#teamPopup6:checked ~ .team-popup__item_6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#teamPopup6:checked ~ .team-popup_6 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-#teamPopup7:checked ~ .team-popup__item_7 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#teamPopup7:checked ~ .team-popup_7 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-#teamPopup8:checked ~ .team-popup__item_8 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#teamPopup8:checked ~ .team-popup_8 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-#teamPopup9:checked ~ .team-popup__item_9 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#teamPopup9:checked ~ .team-popup_9 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-#teamPopup10:checked ~ .team-popup__item_10 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#teamPopup10:checked ~ .team-popup_10 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-#teamPopup11:checked ~ .team-popup__item_11 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#teamPopup11:checked ~ .team-popup_11 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-#teamPopup12:checked ~ .team-popup__item_12 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#teamPopup12:checked ~ .team-popup_12 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .carousel {
